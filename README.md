@@ -1,4 +1,4 @@
-Yarn template package
-=====================
+BRJ Common business components
+==============================
 
-This is sample Yarn package.
+Package with basic BRJ system components.
