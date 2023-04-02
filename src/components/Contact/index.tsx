@@ -1,7 +1,5 @@
 import { FC, ReactNode } from 'react';
 import { Box, Typography } from '@mui/material';
-import Image from 'next/image';
-import profilePic from '../../images/jan-barasek.jpg';
 
 type TableDataProps = {
   label: string;
@@ -23,8 +21,8 @@ export const Contact = () => (
     <Box sx={{ display: 'flex', marginTop: '1.5em' }}>
       <Box sx={{ width: '20%', ['@media (max-width:500px)']: { display: 'none' } }}>
         <Box sx={{ paddingRight: '2em' }}>
-          <Image
-            src={profilePic}
+          <img
+            src="https://cdn.baraja.cz/images/jan-barasek.jpg"
             alt="Jan Barášek"
             title="Jan Barášek - fotografie"
             style={{ width: '100%', borderRadius: '50%' }}
