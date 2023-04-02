@@ -1,0 +1,57 @@
+{
+	"name": "@brj/yarn-template",
+	"version": "1.0.0",
+	"description": "Yarn template",
+	"main": "index.js",
+	"module": "./lib/index.js",
+	"types": "./lib/index.d.ts",
+	"repository": {
+		"url": "git+ssh://git@github.com/baraja-core/yarn-template.git",
+		"type": "git"
+	},
+	"author": "Jan Barášek <jan@barasek.com>",
+	"license": "MIT",
+	"private": false,
+	"keywords": [
+		"React"
+	],
+	"dependencies": {
+		"@types/jest": "~27.0.3",
+		"@types/node": "^17.0.14",
+		"@types/react": "^18.0.12",
+		"typescript": "^4.6.3"
+	},
+	"peerDependencies": {
+		"react": "^16.8.0",
+		"react-dom": "^16.8.0"
+	},
+	"devDependencies": {
+		"@testing-library/jest-dom": "^5.16.3",
+		"@testing-library/react": "^13.4.0",
+		"@testing-library/user-event": "^14.0.4",
+		"@types/jest": "~27.0.3",
+		"prettier": "2.6.2",
+		"react": "^18.1.0",
+		"react-dom": "^18.1.0",
+		"jest": "~27.0.6",
+		"ts-node": "^10.9.1",
+		"ts-jest": "~27.0.7"
+	},
+	"bugs": {
+		"url": "https://github.com/baraja-core/yarn-template/issues"
+	},
+	"homepage": "https://github.com/baraja-core/yarn-template#readme",
+	"scripts": {
+		"prepare": "npm run build",
+		"build": "yarn build:esm && yarn build:cjs && yarn build:types",
+		"build:esm": "tsc",
+		"build:cjs": "tsc --module commonjs --outDir lib",
+		"build:types": "tsc --emitDeclarationOnly --declarationDir lib",
+		"test": "yarn jest --coverage"
+	},
+	"files": [
+		"/src",
+		"/lib",
+		"index.js"
+	]
+}

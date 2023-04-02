@@ -1,0 +1,37 @@
+{
+	"compilerOptions": {
+		"outDir": "lib",
+		"declaration": true,
+		"declarationDir": "lib",
+		"module": "commonjs",
+		"target": "es2018",
+		"lib": [
+			"esnext",
+			"dom"
+		],
+		"baseUrl": "./src",
+		"esModuleInterop": true,
+		"jsx": "react-jsx",
+		"allowSyntheticDefaultImports": true,
+		"moduleResolution": "Node",
+		"strict": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"paths": {
+			"@brj/*": [
+				"./src/*"
+			]
+		}
+	},
+	"include": [
+		"src",
+		"src/**/*",
+		"types/**/*"
+	],
+	"exclude": [
+		"node_modules",
+		"lib"
+	]
+}
