@@ -1,7 +1,7 @@
 import { FC, ReactNode } from 'react';
 import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
-import profilePic from '../images/jan-barasek.jpg';
+import profilePic from '../../images/jan-barasek.jpg';
 
 type TableDataProps = {
   label: string;

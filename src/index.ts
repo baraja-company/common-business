@@ -1,2 +1,2 @@
-export * from './BusinessCard';
-export * from './Contact';
+export * from './components/BusinessCard';
+export * from './components/Contact';
